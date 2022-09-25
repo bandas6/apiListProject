@@ -3,17 +3,9 @@ const { Schema, model } = require('mongoose');
 
 
 const CitySchema = Schema({
-    ciudad: {
+    ciudades: {
         type: String,
-    },
-    departamento: {
-        type: String,
-    },
-    pais: {
-        type: String
-    },
-    
-    
+    }
 });
 
 

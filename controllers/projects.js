@@ -40,7 +40,22 @@ const postProjects = async (req, res = response) => {
 
 }
 
+
+const putProjects = async (req, res = response) => {
+    const { id } = req.params;
+    const { ...data } = req.body;
+    console.log(data)
+
+    const updateProject = await Project.findByIdAndUpdate(id,data);
+
+    res.json({
+        updateProject
+    })
+
+}
+
 module.exports = {
     getProjects,
-    postProjects
+    postProjects,
+    putProjects
 }
