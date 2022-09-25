@@ -15,14 +15,14 @@ const getProjects = async (req, res = response) => {
 
 const postProjects = async (req, res = response) => {
     
-    const {id} = req.params;
+
     
-    const { nombre , descripcion} = req.body;
+    const { nombre , descripcion, cities} = req.body;
    
     const project = {
         nombre,
         descripcion,
-        city_id: id
+        cities
     }
     const projecDB = new Project(project);
 

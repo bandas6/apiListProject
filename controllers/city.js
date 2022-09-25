@@ -25,6 +25,7 @@ const getCity = async (req, res = response)=>{
 const postCitie = async (req, res = response)=>{
 
     const { ...data} = req.body;
+    
 
     const cityDB = new City(data);
 

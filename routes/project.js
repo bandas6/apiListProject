@@ -5,7 +5,7 @@ const router = Router();
 
 router.get('/',getProjects);
 
-router.post('/:id', postProjects);
+router.post('/', postProjects);
 
 
 

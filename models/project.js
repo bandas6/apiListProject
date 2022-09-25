@@ -9,10 +9,8 @@ const ProjectSchema = Schema({
     descripcion: {
         type: String
     },
-    city_id : {
-        type : Schema.Types.ObjectId,
-        ref: 'City',
-        required: true
+    cities : {
+        type : String,
     }
     
 });
